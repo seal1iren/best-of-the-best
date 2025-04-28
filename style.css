@@ -1,0 +1,167 @@
+* {
+  margin:0;
+  padding:0;
+  width:100%;
+  color:#613182;
+  font-family:'Montserrat', sans-serif;
+}
+nav img {
+  width: 130px;
+  padding:10px;
+}
+nav {
+  align-items:center;
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+  background-color:#FFD440;
+}
+
+nav a{
+  text-decoration:none;
+  font-size:20px;
+  padding:10px;
+  color:#613182;
+  transition:0.3s ease-in;
+}
+
+nav a:hover{
+  background-color:#391c4d;
+  transition:0.3s ease-out;
+  color: #FFD440;
+}
+
+h1{
+  text-align:center;
+  padding:30px;
+  font-size:64px;
+  margin:20px;
+}
+
+h2{
+  background-color:lightblue;
+  width: 400px;
+  border-radius:50px;
+  text-align:center;
+  margin: 0 auto;
+  padding:20px;
+  font-size:32px;
+  
+}
+
+section{
+  display:flex;
+  justify-content:space-around;
+  padding: 20px;
+  width:100%;
+}
+
+article{
+  width:460px;
+  height:350px;
+  text-align:center;
+}
+
+article img{
+  width:350px;
+}
+
+.vidvali{
+  background-color:#62257A;
+}
+.vidvali article{
+  background-color:#FFD748;
+}
+.uspishnist{
+  background-color:#FFD748;
+}
+.uspishnist article{
+  background-color:#95C11E;
+}
+.hackaton{
+  background-color:#62257A;
+}
+.hackaton article{
+  background-color:#FFD748;
+}
+.vu-ru{
+  background-color:#95C11E;
+}
+.vu-ru article{
+  background-color:#FFD748;
+  color: #FFD748;
+}
+.up{
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  background-color:#FFD748;
+  border-radius:100%;
+  border:3px solid #62257A;
+  width:70px;
+  height:70px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+
+.up a {
+  text-decoration: none;
+  color: inherit; 
+  font-weight: bold; 
+}
+
+.pp{
+  text-align: center;
+  padding:20px;
+  font-size:32px;
+  color: inherit; 
+  font-weight: bold; 
+}
+
+.contacts{
+  display:flex;
+  width:100%;
+  text-align:center;
+  justify-content:space-between;
+  border-top:1px solid #613182;
+  padding:2px;
+  height:15px;
+}
+
+.abs_1{
+  width:70px;
+  height:70px;
+  position:absolute;
+  right:10%;
+  top:20%;
+}
+
+.abs_2{
+  width:70px;
+  height:70px;
+  position:absolute;
+  right:40%;
+  top:70%;
+}
+
+.abs_3{
+  width:70px;
+  height:70px;
+  position:absolute;
+  left:40%;
+  top:50%;
+}
+.abs_4{
+  width:70px;
+  height:70px;
+  position:absolute;
+  left:10%;
+  bottom:30%;
+}
+
+.contacts::before{
+  content:url("");
+  display: inline-block;
+}
