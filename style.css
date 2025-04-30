@@ -34,7 +34,7 @@ nav a:hover{
 h1{
   text-align:center;
   padding:30px;
-  font-size:64px;
+  font-size:40px;
   margin:20px;
 }
 
@@ -45,7 +45,7 @@ h2{
   text-align:center;
   margin: 0 auto;
   padding:20px;
-  font-size:32px;
+  font-size:24px;
   
 }
 
@@ -58,7 +58,7 @@ section{
 
 article{
   width:460px;
-  height:350px;
+  height:400px;
   text-align:center;
 }
 
@@ -115,7 +115,7 @@ article img{
 .pp{
   text-align: center;
   padding:20px;
-  font-size:32px;
+  font-size:20px;
   color: inherit; 
   font-weight: bold; 
 }
@@ -130,38 +130,16 @@ article img{
   height:15px;
 }
 
-.abs_1{
-  width:70px;
-  height:70px;
-  position:absolute;
-  right:10%;
-  top:20%;
+table{
+  table-layout: auto; 
+  width: 500px; 
+  border-collapse: collapse;
+  margin: 0 auto;
 }
-
-.abs_2{
-  width:70px;
-  height:70px;
-  position:absolute;
-  right:40%;
-  top:70%;
+tr{
+  border:1px solid purple;
 }
-
-.abs_3{
-  width:70px;
-  height:70px;
-  position:absolute;
-  left:40%;
-  top:50%;
-}
-.abs_4{
-  width:70px;
-  height:70px;
-  position:absolute;
-  left:10%;
-  bottom:30%;
-}
-
-.contacts::before{
-  content:url("");
-  display: inline-block;
+td{
+  white-space: nowrap; 
+  padding: 5px 30px;
 }
