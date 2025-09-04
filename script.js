@@ -25,3 +25,4 @@ $('.card').click(function(){
 	}
 	randomize();
 });
+
