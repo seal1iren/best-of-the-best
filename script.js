@@ -1,28 +1,25 @@
 let suits = ['Hearts', 'Spades', 'Diamonds', 'Clubs'];
 let suitType;
 
-randomize = () => {
-	suitType = Math.floor(Math.random() * 4);
+function randomize() {
+  suitType = Math.floor(Math.random() * 4);
   let suitResult = suits[suitType];
-	console.log(suitResult);
+  console.log(suitResult);
 }
 
-let cardAmount = ($('.card').length) + 1;
+let cards = document.querySelectorAll(".card");
 
-for (i = 1; i < cardAmount; i++) {
-	var randomRot = -43 + Math.ceil(Math.random() * 3);
-	var card = document.querySelector(`.card:nth-child(${i})`);
-	card.style.transform = `rotateX(60deg) rotateY(0deg) rotateZ(${randomRot}deg) translateZ(${i*3}px)`;
-}
+cards.forEach((card, index) => {
+  let randomRot = -43 + Math.ceil(Math.random() * 3);
+  card.style.transform = `rotateX(60deg) rotateY(0deg) rotateZ(${randomRot}deg) translateZ(${(index+1)*3}px)`;
 
-$('.card').click(function(){
-	if ($(this).hasClass('down')) {
-		$(this).removeClass('down');
-		$(this).addClass('opened');
-	}
-	else if ($(this).hasClass('opened')) {
-		$(this).addClass('is-removed');
-	}
-	randomize();
+  card.addEventListener("click", () => {
+    if (card.classList.contains("down")) {
+      card.classList.remove("down");
+      card.classList.add("opened");
+    } else if (card.classList.contains("opened")) {
+      card.classList.add("is-removed");
+    }
+    randomize();
+  });
 });
-
